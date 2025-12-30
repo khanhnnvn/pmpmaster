@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${manrope.variable} font-display bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased`}
+        className={`${roboto.variable} font-display bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased`}
         suppressHydrationWarning
       >
         {children}

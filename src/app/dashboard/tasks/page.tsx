@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 interface Task {
     id: number;
@@ -85,10 +86,10 @@ export default function TasksPage() {
                     <h1 className="text-[#111418] dark:text-white text-3xl font-black">Quản lý công việc</h1>
                     <p className="text-[#617589] dark:text-slate-400 text-sm">Theo dõi và quản lý tất cả các công việc.</p>
                 </div>
-                <button className="flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-white rounded-lg px-5 h-11 shadow-sm transition-all">
+                <Link href="/dashboard/tasks/new" className="flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-white rounded-lg px-5 h-11 shadow-sm transition-all">
                     <span className="material-symbols-outlined text-[20px]">add</span>
                     <span className="text-sm font-bold">Thêm công việc</span>
-                </button>
+                </Link>
             </div>
 
             <div className="bg-white dark:bg-card-dark rounded-xl shadow-sm border border-slate-200 dark:border-gray-800 overflow-hidden">

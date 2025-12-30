@@ -21,7 +21,7 @@
   --color-card-dark: var(--card-dark);
   --color-text-main: var(--text-main);
   --color-text-muted: var(--text-muted);
-  --font-display: 'Manrope', sans-serif;
+  --font-display: 'Roboto', sans-serif;
 }
 
 /* Dark mode support */
@@ -64,7 +64,7 @@
 
 /* Base body styles */
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
