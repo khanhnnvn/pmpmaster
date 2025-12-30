@@ -1,0 +1,8 @@
+{
+  "name": "PMP Master",
+  "description": "A world-class project management application with real-time tracking, meeting minutes, and smart integrations.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
